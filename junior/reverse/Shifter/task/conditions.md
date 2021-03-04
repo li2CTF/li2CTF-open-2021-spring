@@ -1,6 +1,4 @@
 # Shifter
-Hey, young reverser! Lets reverse it and get the flag!
+Hey, young reverser! Time to read and understand this code! Flag is the string making app say that you entered correct flag. Good luck, I'm waiting for your flag :)
 
-Don't forget that you need linux to run it (copy file to linux and type `./shifter.elf` in terminal).
-
-If you can't solve it - don't worry, it's very hard task for beginner. Go and get all other flags :)
+Language: `C`
