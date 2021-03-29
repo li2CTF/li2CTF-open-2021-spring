@@ -1,4 +1,4 @@
 # Tempus machina
-> Intelligere est infinitum. Invenire praeteritis. Inveniat futurum. Deus autem omnipotens benedicat nos.
+> Sentiunt tempus. Memento futura. Colligere memoria a frusta
 
-Feel the time, remember your future, collect the memory from pieces
+Feel the time. Remember your future. Collect the memory from pieces

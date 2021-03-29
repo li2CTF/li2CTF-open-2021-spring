@@ -1,9 +1,2 @@
 # Molten Vinyl
-> Я все забыл, я пил расплавленный винил  
-И видел сам, как флаги падали к ногам  
-И опускалось _wave_, и скалилось, когда  
-Баллами блестели злые племена  
-Студенты вдруг сцепились и спрятали глаза  
-И выпускали когти за байты из флага
-
-I really enjoy this song, I literally love _every 8th bit_ of it!
+I really enjoy this song, I literally love **_every 8th bit_** of it! Feel the **_wave_** with me!
