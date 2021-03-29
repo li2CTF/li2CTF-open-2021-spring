@@ -2,11 +2,11 @@
 /* print_CIL_Input is false */
 
 struct _IO_FILE ;
-enum _1_pr0c_$op ;
-union _1_pr0c_$node ;
+enum _1_pr1ntR34lPr1z3_$op ;
+union _1_pr1ntR34lPr1z3_$node ;
 struct timeval ;
-void syms_i$nit(void) ;
 extern int gettimeofday(struct timeval *tv , void *tz ) ;
+void syms_i$nit(void) ;
 extern int pthread_cond_broadcast(int *cond ) ;
 char **_global_argv  =    (char **)0;
 extern int posix_memalign(void **memptr , unsigned int alignment , unsigned int size ) ;
@@ -18,17 +18,26 @@ void numsLength_i$nit(void) ;
 extern int pthread_barrier_destroy(int *barrier ) ;
 extern int pthread_mutex_init(int *mutex , int *attr ) ;
 extern int strncmp(char const   *s1 , char const   *s2 , unsigned int maxlen ) ;
-void __attribute__((__optimize__(3)))  pr0c(void) ;
 extern int printf(char const   * __restrict  __format  , ...) ;
 void __attribute__((__optimize__(3)))  printPrize(char a ) ;
-int _global_argc  =    0;
 int nums[305] ;
+int _global_argc  =    0;
 extern int pthread_cond_signal(int *cond ) ;
 extern int pthread_barrier_init(int *barrier , int *attr , unsigned int count ) ;
 extern int scanf(char const   * __restrict  __format  , ...)  __asm__("__isoc99_scanf")  ;
 extern int raise(int sig ) ;
 char **_global_envp  =    (char **)0;
-union _1_pr0c_$node {
+extern int unlink(char const   *filename ) ;
+void printTurn(void) ;
+unsigned int r4nd0m(unsigned int prev ) ;
+extern int pthread_barrier_wait(int *barrier ) ;
+extern double difftime(long tv1 , long tv0 ) ;
+extern int pthread_mutex_lock(int *mutex ) ;
+extern void *memcpy(void *s1 , void const   *s2 , unsigned int size ) ;
+extern int gethostname(char *name , unsigned int namelen ) ;
+extern void *dlsym(void *handle , char *symbol ) ;
+void prizeLength_i$nit(void) ;
+union _1_pr1ntR34lPr1z3_$node {
    char _char ;
    unsigned int _unsigned_int ;
    unsigned char _unsigned_char ;
@@ -42,16 +51,6 @@ union _1_pr0c_$node {
    int _int ;
    short _short ;
 };
-extern int unlink(char const   *filename ) ;
-void printTurn(void) ;
-unsigned int r4nd0m(unsigned int prev ) ;
-extern int pthread_barrier_wait(int *barrier ) ;
-extern double difftime(long tv1 , long tv0 ) ;
-extern int pthread_mutex_lock(int *mutex ) ;
-extern void *memcpy(void *s1 , void const   *s2 , unsigned int size ) ;
-void prizeLength_i$nit(void) ;
-extern int gethostname(char *name , unsigned int namelen ) ;
-extern void *dlsym(void *handle , char *symbol ) ;
 extern unsigned long strtoul(char const   *str , char const   *endptr , int base ) ;
 extern void abort() ;
 extern void free(void *ptr ) ;
@@ -60,121 +59,122 @@ int main(int _formal_argc , char **_formal_argv , char **_formal_envp ) ;
 extern void exit(int status ) ;
 extern void signal(int sig , void *func ) ;
 void xorKey_i$nit(void) ;
+char const   *_1_pr1ntR34lPr1z3_$strings  =    "%c\000\n\000";
 typedef struct _IO_FILE FILE;
 extern int close(int filedes ) ;
 extern int mprotect(void *addr , unsigned int len , int prot ) ;
 void seed_i$nit(void) ;
 extern double log(double x ) ;
 extern double strtod(char const   *str , char const   *endptr ) ;
-enum _1_pr0c_$op {
-    _1_pr0c__Div_int_int2int$left_STA_0$result_STA_0$right_STA_1 = 191,
-    _1_pr0c__global$result_STA_0$value_LIT_0 = 190,
-    _1_pr0c__branchIfTrue$expr_STA_0$label_LAB_0 = 253,
-    _1_pr0c__call$func_LIT_0 = 64,
-    _1_pr0c__constant_void_star$result_STA_0$value_LIT_0 = 24,
-    _1_pr0c__convert_char2int$left_STA_0$result_STA_0 = 250,
-    _1_pr0c__Lt_int_int2int$left_STA_0$result_STA_0$right_STA_1 = 42,
-    _1_pr0c__Mult_unsigned_long_unsigned_long2unsigned_long$left_STA_0$result_STA_0$right_STA_1 = 136,
-    _1_pr0c__Eq_int_int2int$right_STA_0$result_STA_0$left_STA_1 = 254,
-    _1_pr0c__load_int$left_STA_0$result_STA_0 = 123,
-    _1_pr0c__store_void_star$left_STA_0$right_STA_1 = 1,
-    _1_pr0c__convert_int2char$left_STA_0$result_STA_0 = 182,
-    _1_pr0c__constant_unsigned_long$result_STA_0$value_LIT_0 = 168,
-    _1_pr0c__returnVoid$ = 90,
-    _1_pr0c__store_int$left_STA_0$right_STA_1 = 163,
-    _1_pr0c__string$result_STA_0$value_LIT_0 = 3,
-    _1_pr0c__constant_int$result_STA_0$value_LIT_0 = 7,
-    _1_pr0c__BXor_int_int2int$right_STA_0$result_STA_0$left_STA_1 = 18,
-    _1_pr0c__PlusPI_void_star_unsigned_long2void_star$right_STA_0$result_STA_0$left_STA_1 = 154,
-    _1_pr0c__convert_void_star2void_star$left_STA_0$result_STA_0 = 103,
-    _1_pr0c__MinusA_int_int2int$right_STA_0$result_STA_0$left_STA_1 = 197,
-    _1_pr0c__convert_int2unsigned_long$left_STA_0$result_STA_0 = 35,
-    _1_pr0c__PlusA_int_int2int$right_STA_0$result_STA_0$left_STA_1 = 58,
-    _1_pr0c__goto$label_LAB_0 = 91,
-    _1_pr0c__local$result_STA_0$value_LIT_0 = 100,
-    _1_pr0c__PlusPI_void_star_int2void_star$right_STA_0$result_STA_0$left_STA_1 = 132
-} ;
 extern double ceil(double x ) ;
-unsigned char _1_pr0c_$array[1][319]  = { {        _1_pr0c__constant_int$result_STA_0$value_LIT_0,        (unsigned char)0,        (unsigned char)0,        (unsigned char)0, 
-            (unsigned char)0,        _1_pr0c__local$result_STA_0$value_LIT_0,        (unsigned char)0,        (unsigned char)0, 
-            (unsigned char)0,        (unsigned char)0,        _1_pr0c__store_int$left_STA_0$right_STA_1,        _1_pr0c__global$result_STA_0$value_LIT_0, 
+enum _1_pr1ntR34lPr1z3_$op {
+    _1_pr1ntR34lPr1z3__Div_int_int2int$left_STA_0$result_STA_0$right_STA_1 = 191,
+    _1_pr1ntR34lPr1z3__global$result_STA_0$value_LIT_0 = 190,
+    _1_pr1ntR34lPr1z3__branchIfTrue$expr_STA_0$label_LAB_0 = 253,
+    _1_pr1ntR34lPr1z3__call$func_LIT_0 = 64,
+    _1_pr1ntR34lPr1z3__constant_void_star$result_STA_0$value_LIT_0 = 24,
+    _1_pr1ntR34lPr1z3__convert_char2int$left_STA_0$result_STA_0 = 250,
+    _1_pr1ntR34lPr1z3__Lt_int_int2int$left_STA_0$result_STA_0$right_STA_1 = 42,
+    _1_pr1ntR34lPr1z3__Mult_unsigned_long_unsigned_long2unsigned_long$left_STA_0$result_STA_0$right_STA_1 = 136,
+    _1_pr1ntR34lPr1z3__Eq_int_int2int$right_STA_0$result_STA_0$left_STA_1 = 254,
+    _1_pr1ntR34lPr1z3__load_int$left_STA_0$result_STA_0 = 123,
+    _1_pr1ntR34lPr1z3__store_void_star$left_STA_0$right_STA_1 = 1,
+    _1_pr1ntR34lPr1z3__convert_int2char$left_STA_0$result_STA_0 = 182,
+    _1_pr1ntR34lPr1z3__constant_unsigned_long$result_STA_0$value_LIT_0 = 168,
+    _1_pr1ntR34lPr1z3__returnVoid$ = 90,
+    _1_pr1ntR34lPr1z3__store_int$left_STA_0$right_STA_1 = 163,
+    _1_pr1ntR34lPr1z3__string$result_STA_0$value_LIT_0 = 3,
+    _1_pr1ntR34lPr1z3__constant_int$result_STA_0$value_LIT_0 = 7,
+    _1_pr1ntR34lPr1z3__BXor_int_int2int$right_STA_0$result_STA_0$left_STA_1 = 18,
+    _1_pr1ntR34lPr1z3__PlusPI_void_star_unsigned_long2void_star$right_STA_0$result_STA_0$left_STA_1 = 154,
+    _1_pr1ntR34lPr1z3__convert_void_star2void_star$left_STA_0$result_STA_0 = 103,
+    _1_pr1ntR34lPr1z3__MinusA_int_int2int$right_STA_0$result_STA_0$left_STA_1 = 197,
+    _1_pr1ntR34lPr1z3__convert_int2unsigned_long$left_STA_0$result_STA_0 = 35,
+    _1_pr1ntR34lPr1z3__PlusA_int_int2int$right_STA_0$result_STA_0$left_STA_1 = 58,
+    _1_pr1ntR34lPr1z3__goto$label_LAB_0 = 91,
+    _1_pr1ntR34lPr1z3__local$result_STA_0$value_LIT_0 = 100,
+    _1_pr1ntR34lPr1z3__PlusPI_void_star_int2void_star$right_STA_0$result_STA_0$left_STA_1 = 132
+} ;
+unsigned char _1_pr1ntR34lPr1z3_$array[1][319]  = { {        _1_pr1ntR34lPr1z3__constant_int$result_STA_0$value_LIT_0,        (unsigned char)0,        (unsigned char)0,        (unsigned char)0, 
+            (unsigned char)0,        _1_pr1ntR34lPr1z3__local$result_STA_0$value_LIT_0,        (unsigned char)0,        (unsigned char)0, 
+            (unsigned char)0,        (unsigned char)0,        _1_pr1ntR34lPr1z3__store_int$left_STA_0$right_STA_1,        _1_pr1ntR34lPr1z3__global$result_STA_0$value_LIT_0, 
             (unsigned char)0,        (unsigned char)0,        (unsigned char)0,        (unsigned char)0, 
-            _1_pr0c__constant_unsigned_long$result_STA_0$value_LIT_0,        (unsigned char)4,        (unsigned char)0,        (unsigned char)0, 
+            _1_pr1ntR34lPr1z3__constant_unsigned_long$result_STA_0$value_LIT_0,        (unsigned char)4,        (unsigned char)0,        (unsigned char)0, 
             (unsigned char)0,        (unsigned char)0,        (unsigned char)0,        (unsigned char)0, 
-            (unsigned char)0,        _1_pr0c__constant_unsigned_long$result_STA_0$value_LIT_0,        (unsigned char)0,        (unsigned char)0, 
+            (unsigned char)0,        _1_pr1ntR34lPr1z3__constant_unsigned_long$result_STA_0$value_LIT_0,        (unsigned char)0,        (unsigned char)0, 
             (unsigned char)0,        (unsigned char)0,        (unsigned char)0,        (unsigned char)0, 
-            (unsigned char)0,        (unsigned char)0,        _1_pr0c__Mult_unsigned_long_unsigned_long2unsigned_long$left_STA_0$result_STA_0$right_STA_1,        _1_pr0c__constant_void_star$result_STA_0$value_LIT_0, 
+            (unsigned char)0,        (unsigned char)0,        _1_pr1ntR34lPr1z3__Mult_unsigned_long_unsigned_long2unsigned_long$left_STA_0$result_STA_0$right_STA_1,        _1_pr1ntR34lPr1z3__constant_void_star$result_STA_0$value_LIT_0, 
             (unsigned char)0,        (unsigned char)0,        (unsigned char)0,        (unsigned char)0, 
             (unsigned char)0,        (unsigned char)0,        (unsigned char)0,        (unsigned char)0, 
-            _1_pr0c__PlusPI_void_star_unsigned_long2void_star$right_STA_0$result_STA_0$left_STA_1,        _1_pr0c__PlusPI_void_star_int2void_star$right_STA_0$result_STA_0$left_STA_1,        _1_pr0c__load_int$left_STA_0$result_STA_0,        _1_pr0c__local$result_STA_0$value_LIT_0, 
+            _1_pr1ntR34lPr1z3__PlusPI_void_star_unsigned_long2void_star$right_STA_0$result_STA_0$left_STA_1,        _1_pr1ntR34lPr1z3__PlusPI_void_star_int2void_star$right_STA_0$result_STA_0$left_STA_1,        _1_pr1ntR34lPr1z3__load_int$left_STA_0$result_STA_0,        _1_pr1ntR34lPr1z3__local$result_STA_0$value_LIT_0, 
             (unsigned char)4,        (unsigned char)0,        (unsigned char)0,        (unsigned char)0, 
-            _1_pr0c__store_int$left_STA_0$right_STA_1,        _1_pr0c__constant_int$result_STA_0$value_LIT_0,        (unsigned char)0,        (unsigned char)0, 
-            (unsigned char)0,        (unsigned char)0,        _1_pr0c__local$result_STA_0$value_LIT_0,        (unsigned char)8, 
-            (unsigned char)0,        (unsigned char)0,        (unsigned char)0,        _1_pr0c__store_int$left_STA_0$right_STA_1, 
-            _1_pr0c__goto$label_LAB_0,        (unsigned char)4,        (unsigned char)0,        (unsigned char)0, 
-            (unsigned char)0,        _1_pr0c__global$result_STA_0$value_LIT_0,        (unsigned char)1,        (unsigned char)0, 
-            (unsigned char)0,        (unsigned char)0,        _1_pr0c__load_int$left_STA_0$result_STA_0,        _1_pr0c__local$result_STA_0$value_LIT_0, 
+            _1_pr1ntR34lPr1z3__store_int$left_STA_0$right_STA_1,        _1_pr1ntR34lPr1z3__constant_int$result_STA_0$value_LIT_0,        (unsigned char)0,        (unsigned char)0, 
+            (unsigned char)0,        (unsigned char)0,        _1_pr1ntR34lPr1z3__local$result_STA_0$value_LIT_0,        (unsigned char)8, 
+            (unsigned char)0,        (unsigned char)0,        (unsigned char)0,        _1_pr1ntR34lPr1z3__store_int$left_STA_0$right_STA_1, 
+            _1_pr1ntR34lPr1z3__goto$label_LAB_0,        (unsigned char)4,        (unsigned char)0,        (unsigned char)0, 
+            (unsigned char)0,        _1_pr1ntR34lPr1z3__global$result_STA_0$value_LIT_0,        (unsigned char)1,        (unsigned char)0, 
+            (unsigned char)0,        (unsigned char)0,        _1_pr1ntR34lPr1z3__load_int$left_STA_0$result_STA_0,        _1_pr1ntR34lPr1z3__local$result_STA_0$value_LIT_0, 
             (unsigned char)8,        (unsigned char)0,        (unsigned char)0,        (unsigned char)0, 
-            _1_pr0c__load_int$left_STA_0$result_STA_0,        _1_pr0c__Lt_int_int2int$left_STA_0$result_STA_0$right_STA_1,        _1_pr0c__branchIfTrue$expr_STA_0$label_LAB_0,        (unsigned char)14, 
-            (unsigned char)0,        (unsigned char)0,        (unsigned char)0,        _1_pr0c__goto$label_LAB_0, 
+            _1_pr1ntR34lPr1z3__load_int$left_STA_0$result_STA_0,        _1_pr1ntR34lPr1z3__Lt_int_int2int$left_STA_0$result_STA_0$right_STA_1,        _1_pr1ntR34lPr1z3__branchIfTrue$expr_STA_0$label_LAB_0,        (unsigned char)14, 
+            (unsigned char)0,        (unsigned char)0,        (unsigned char)0,        _1_pr1ntR34lPr1z3__goto$label_LAB_0, 
             (unsigned char)4,        (unsigned char)0,        (unsigned char)0,        (unsigned char)0, 
-            _1_pr0c__goto$label_LAB_0,        (unsigned char)203,        (unsigned char)0,        (unsigned char)0, 
-            (unsigned char)0,        _1_pr0c__local$result_STA_0$value_LIT_0,        (unsigned char)8,        (unsigned char)0, 
-            (unsigned char)0,        (unsigned char)0,        _1_pr0c__load_int$left_STA_0$result_STA_0,        _1_pr0c__local$result_STA_0$value_LIT_0, 
+            _1_pr1ntR34lPr1z3__goto$label_LAB_0,        (unsigned char)203,        (unsigned char)0,        (unsigned char)0, 
+            (unsigned char)0,        _1_pr1ntR34lPr1z3__local$result_STA_0$value_LIT_0,        (unsigned char)8,        (unsigned char)0, 
+            (unsigned char)0,        (unsigned char)0,        _1_pr1ntR34lPr1z3__load_int$left_STA_0$result_STA_0,        _1_pr1ntR34lPr1z3__local$result_STA_0$value_LIT_0, 
             (unsigned char)4,        (unsigned char)0,        (unsigned char)0,        (unsigned char)0, 
-            _1_pr0c__load_int$left_STA_0$result_STA_0,        _1_pr0c__Eq_int_int2int$right_STA_0$result_STA_0$left_STA_1,        _1_pr0c__branchIfTrue$expr_STA_0$label_LAB_0,        (unsigned char)9, 
-            (unsigned char)0,        (unsigned char)0,        (unsigned char)0,        _1_pr0c__goto$label_LAB_0, 
+            _1_pr1ntR34lPr1z3__load_int$left_STA_0$result_STA_0,        _1_pr1ntR34lPr1z3__Eq_int_int2int$right_STA_0$result_STA_0$left_STA_1,        _1_pr1ntR34lPr1z3__branchIfTrue$expr_STA_0$label_LAB_0,        (unsigned char)9, 
+            (unsigned char)0,        (unsigned char)0,        (unsigned char)0,        _1_pr1ntR34lPr1z3__goto$label_LAB_0, 
             (unsigned char)152,        (unsigned char)0,        (unsigned char)0,        (unsigned char)0, 
-            _1_pr0c__string$result_STA_0$value_LIT_0,        (unsigned char)0,        (unsigned char)0,        (unsigned char)0, 
-            (unsigned char)0,        _1_pr0c__convert_void_star2void_star$left_STA_0$result_STA_0,        _1_pr0c__local$result_STA_0$value_LIT_0,        (unsigned char)16, 
-            (unsigned char)0,        (unsigned char)0,        (unsigned char)0,        _1_pr0c__store_void_star$left_STA_0$right_STA_1, 
-            _1_pr0c__constant_int$result_STA_0$value_LIT_0,        (unsigned char)4,        (unsigned char)0,        (unsigned char)0, 
-            (unsigned char)0,        _1_pr0c__global$result_STA_0$value_LIT_0,        (unsigned char)2,        (unsigned char)0, 
-            (unsigned char)0,        (unsigned char)0,        _1_pr0c__constant_unsigned_long$result_STA_0$value_LIT_0,        (unsigned char)4, 
+            _1_pr1ntR34lPr1z3__string$result_STA_0$value_LIT_0,        (unsigned char)0,        (unsigned char)0,        (unsigned char)0, 
+            (unsigned char)0,        _1_pr1ntR34lPr1z3__convert_void_star2void_star$left_STA_0$result_STA_0,        _1_pr1ntR34lPr1z3__local$result_STA_0$value_LIT_0,        (unsigned char)16, 
+            (unsigned char)0,        (unsigned char)0,        (unsigned char)0,        _1_pr1ntR34lPr1z3__store_void_star$left_STA_0$right_STA_1, 
+            _1_pr1ntR34lPr1z3__constant_int$result_STA_0$value_LIT_0,        (unsigned char)4,        (unsigned char)0,        (unsigned char)0, 
+            (unsigned char)0,        _1_pr1ntR34lPr1z3__global$result_STA_0$value_LIT_0,        (unsigned char)2,        (unsigned char)0, 
+            (unsigned char)0,        (unsigned char)0,        _1_pr1ntR34lPr1z3__constant_unsigned_long$result_STA_0$value_LIT_0,        (unsigned char)4, 
             (unsigned char)0,        (unsigned char)0,        (unsigned char)0,        (unsigned char)0, 
-            (unsigned char)0,        (unsigned char)0,        (unsigned char)0,        _1_pr0c__local$result_STA_0$value_LIT_0, 
+            (unsigned char)0,        (unsigned char)0,        (unsigned char)0,        _1_pr1ntR34lPr1z3__local$result_STA_0$value_LIT_0, 
             (unsigned char)8,        (unsigned char)0,        (unsigned char)0,        (unsigned char)0, 
-            _1_pr0c__load_int$left_STA_0$result_STA_0,        _1_pr0c__convert_int2unsigned_long$left_STA_0$result_STA_0,        _1_pr0c__Mult_unsigned_long_unsigned_long2unsigned_long$left_STA_0$result_STA_0$right_STA_1,        _1_pr0c__constant_void_star$result_STA_0$value_LIT_0, 
+            _1_pr1ntR34lPr1z3__load_int$left_STA_0$result_STA_0,        _1_pr1ntR34lPr1z3__convert_int2unsigned_long$left_STA_0$result_STA_0,        _1_pr1ntR34lPr1z3__Mult_unsigned_long_unsigned_long2unsigned_long$left_STA_0$result_STA_0$right_STA_1,        _1_pr1ntR34lPr1z3__constant_void_star$result_STA_0$value_LIT_0, 
             (unsigned char)0,        (unsigned char)0,        (unsigned char)0,        (unsigned char)0, 
             (unsigned char)0,        (unsigned char)0,        (unsigned char)0,        (unsigned char)0, 
-            _1_pr0c__PlusPI_void_star_unsigned_long2void_star$right_STA_0$result_STA_0$left_STA_1,        _1_pr0c__PlusPI_void_star_int2void_star$right_STA_0$result_STA_0$left_STA_1,        _1_pr0c__load_int$left_STA_0$result_STA_0,        _1_pr0c__Div_int_int2int$left_STA_0$result_STA_0$right_STA_1, 
-            _1_pr0c__constant_int$result_STA_0$value_LIT_0,        (unsigned char)20,        (unsigned char)0,        (unsigned char)0, 
-            (unsigned char)0,        _1_pr0c__MinusA_int_int2int$right_STA_0$result_STA_0$left_STA_1,        _1_pr0c__global$result_STA_0$value_LIT_0,        (unsigned char)3, 
-            (unsigned char)0,        (unsigned char)0,        (unsigned char)0,        _1_pr0c__load_int$left_STA_0$result_STA_0, 
-            _1_pr0c__BXor_int_int2int$right_STA_0$result_STA_0$left_STA_1,        _1_pr0c__convert_int2char$left_STA_0$result_STA_0,        _1_pr0c__convert_char2int$left_STA_0$result_STA_0,        _1_pr0c__local$result_STA_0$value_LIT_0, 
+            _1_pr1ntR34lPr1z3__PlusPI_void_star_unsigned_long2void_star$right_STA_0$result_STA_0$left_STA_1,        _1_pr1ntR34lPr1z3__PlusPI_void_star_int2void_star$right_STA_0$result_STA_0$left_STA_1,        _1_pr1ntR34lPr1z3__load_int$left_STA_0$result_STA_0,        _1_pr1ntR34lPr1z3__Div_int_int2int$left_STA_0$result_STA_0$right_STA_1, 
+            _1_pr1ntR34lPr1z3__constant_int$result_STA_0$value_LIT_0,        (unsigned char)20,        (unsigned char)0,        (unsigned char)0, 
+            (unsigned char)0,        _1_pr1ntR34lPr1z3__MinusA_int_int2int$right_STA_0$result_STA_0$left_STA_1,        _1_pr1ntR34lPr1z3__global$result_STA_0$value_LIT_0,        (unsigned char)3, 
+            (unsigned char)0,        (unsigned char)0,        (unsigned char)0,        _1_pr1ntR34lPr1z3__load_int$left_STA_0$result_STA_0, 
+            _1_pr1ntR34lPr1z3__BXor_int_int2int$right_STA_0$result_STA_0$left_STA_1,        _1_pr1ntR34lPr1z3__convert_int2char$left_STA_0$result_STA_0,        _1_pr1ntR34lPr1z3__convert_char2int$left_STA_0$result_STA_0,        _1_pr1ntR34lPr1z3__local$result_STA_0$value_LIT_0, 
             (unsigned char)24,        (unsigned char)0,        (unsigned char)0,        (unsigned char)0, 
-            _1_pr0c__store_int$left_STA_0$right_STA_1,        _1_pr0c__call$func_LIT_0,        (unsigned char)1,        (unsigned char)0, 
-            (unsigned char)0,        (unsigned char)0,        _1_pr0c__local$result_STA_0$value_LIT_0,        (unsigned char)0, 
-            (unsigned char)0,        (unsigned char)0,        (unsigned char)0,        _1_pr0c__load_int$left_STA_0$result_STA_0, 
-            _1_pr0c__constant_int$result_STA_0$value_LIT_0,        (unsigned char)1,        (unsigned char)0,        (unsigned char)0, 
-            (unsigned char)0,        _1_pr0c__PlusA_int_int2int$right_STA_0$result_STA_0$left_STA_1,        _1_pr0c__local$result_STA_0$value_LIT_0,        (unsigned char)0, 
-            (unsigned char)0,        (unsigned char)0,        (unsigned char)0,        _1_pr0c__store_int$left_STA_0$right_STA_1, 
-            _1_pr0c__local$result_STA_0$value_LIT_0,        (unsigned char)4,        (unsigned char)0,        (unsigned char)0, 
-            (unsigned char)0,        _1_pr0c__load_int$left_STA_0$result_STA_0,        _1_pr0c__global$result_STA_0$value_LIT_0,        (unsigned char)0, 
-            (unsigned char)0,        (unsigned char)0,        (unsigned char)0,        _1_pr0c__constant_unsigned_long$result_STA_0$value_LIT_0, 
+            _1_pr1ntR34lPr1z3__store_int$left_STA_0$right_STA_1,        _1_pr1ntR34lPr1z3__call$func_LIT_0,        (unsigned char)1,        (unsigned char)0, 
+            (unsigned char)0,        (unsigned char)0,        _1_pr1ntR34lPr1z3__local$result_STA_0$value_LIT_0,        (unsigned char)0, 
+            (unsigned char)0,        (unsigned char)0,        (unsigned char)0,        _1_pr1ntR34lPr1z3__load_int$left_STA_0$result_STA_0, 
+            _1_pr1ntR34lPr1z3__constant_int$result_STA_0$value_LIT_0,        (unsigned char)1,        (unsigned char)0,        (unsigned char)0, 
+            (unsigned char)0,        _1_pr1ntR34lPr1z3__PlusA_int_int2int$right_STA_0$result_STA_0$left_STA_1,        _1_pr1ntR34lPr1z3__local$result_STA_0$value_LIT_0,        (unsigned char)0, 
+            (unsigned char)0,        (unsigned char)0,        (unsigned char)0,        _1_pr1ntR34lPr1z3__store_int$left_STA_0$right_STA_1, 
+            _1_pr1ntR34lPr1z3__local$result_STA_0$value_LIT_0,        (unsigned char)4,        (unsigned char)0,        (unsigned char)0, 
+            (unsigned char)0,        _1_pr1ntR34lPr1z3__load_int$left_STA_0$result_STA_0,        _1_pr1ntR34lPr1z3__global$result_STA_0$value_LIT_0,        (unsigned char)0, 
+            (unsigned char)0,        (unsigned char)0,        (unsigned char)0,        _1_pr1ntR34lPr1z3__constant_unsigned_long$result_STA_0$value_LIT_0, 
             (unsigned char)4,        (unsigned char)0,        (unsigned char)0,        (unsigned char)0, 
             (unsigned char)0,        (unsigned char)0,        (unsigned char)0,        (unsigned char)0, 
-            _1_pr0c__local$result_STA_0$value_LIT_0,        (unsigned char)0,        (unsigned char)0,        (unsigned char)0, 
-            (unsigned char)0,        _1_pr0c__load_int$left_STA_0$result_STA_0,        _1_pr0c__convert_int2unsigned_long$left_STA_0$result_STA_0,        _1_pr0c__Mult_unsigned_long_unsigned_long2unsigned_long$left_STA_0$result_STA_0$right_STA_1, 
-            _1_pr0c__constant_void_star$result_STA_0$value_LIT_0,        (unsigned char)0,        (unsigned char)0,        (unsigned char)0, 
+            _1_pr1ntR34lPr1z3__local$result_STA_0$value_LIT_0,        (unsigned char)0,        (unsigned char)0,        (unsigned char)0, 
+            (unsigned char)0,        _1_pr1ntR34lPr1z3__load_int$left_STA_0$result_STA_0,        _1_pr1ntR34lPr1z3__convert_int2unsigned_long$left_STA_0$result_STA_0,        _1_pr1ntR34lPr1z3__Mult_unsigned_long_unsigned_long2unsigned_long$left_STA_0$result_STA_0$right_STA_1, 
+            _1_pr1ntR34lPr1z3__constant_void_star$result_STA_0$value_LIT_0,        (unsigned char)0,        (unsigned char)0,        (unsigned char)0, 
             (unsigned char)0,        (unsigned char)0,        (unsigned char)0,        (unsigned char)0, 
-            (unsigned char)0,        _1_pr0c__PlusPI_void_star_unsigned_long2void_star$right_STA_0$result_STA_0$left_STA_1,        _1_pr0c__PlusPI_void_star_int2void_star$right_STA_0$result_STA_0$left_STA_1,        _1_pr0c__load_int$left_STA_0$result_STA_0, 
-            _1_pr0c__PlusA_int_int2int$right_STA_0$result_STA_0$left_STA_1,        _1_pr0c__local$result_STA_0$value_LIT_0,        (unsigned char)4,        (unsigned char)0, 
-            (unsigned char)0,        (unsigned char)0,        _1_pr0c__store_int$left_STA_0$right_STA_1,        _1_pr0c__goto$label_LAB_0, 
+            (unsigned char)0,        _1_pr1ntR34lPr1z3__PlusPI_void_star_unsigned_long2void_star$right_STA_0$result_STA_0$left_STA_1,        _1_pr1ntR34lPr1z3__PlusPI_void_star_int2void_star$right_STA_0$result_STA_0$left_STA_1,        _1_pr1ntR34lPr1z3__load_int$left_STA_0$result_STA_0, 
+            _1_pr1ntR34lPr1z3__PlusA_int_int2int$right_STA_0$result_STA_0$left_STA_1,        _1_pr1ntR34lPr1z3__local$result_STA_0$value_LIT_0,        (unsigned char)4,        (unsigned char)0, 
+            (unsigned char)0,        (unsigned char)0,        _1_pr1ntR34lPr1z3__store_int$left_STA_0$right_STA_1,        _1_pr1ntR34lPr1z3__goto$label_LAB_0, 
             (unsigned char)4,        (unsigned char)0,        (unsigned char)0,        (unsigned char)0, 
-            _1_pr0c__local$result_STA_0$value_LIT_0,        (unsigned char)8,        (unsigned char)0,        (unsigned char)0, 
-            (unsigned char)0,        _1_pr0c__load_int$left_STA_0$result_STA_0,        _1_pr0c__constant_int$result_STA_0$value_LIT_0,        (unsigned char)1, 
-            (unsigned char)0,        (unsigned char)0,        (unsigned char)0,        _1_pr0c__PlusA_int_int2int$right_STA_0$result_STA_0$left_STA_1, 
-            _1_pr0c__local$result_STA_0$value_LIT_0,        (unsigned char)8,        (unsigned char)0,        (unsigned char)0, 
-            (unsigned char)0,        _1_pr0c__store_int$left_STA_0$right_STA_1,        _1_pr0c__goto$label_LAB_0,        (unsigned char)38, 
-            (unsigned char)255,        (unsigned char)255,        (unsigned char)255,        _1_pr0c__goto$label_LAB_0, 
+            _1_pr1ntR34lPr1z3__local$result_STA_0$value_LIT_0,        (unsigned char)8,        (unsigned char)0,        (unsigned char)0, 
+            (unsigned char)0,        _1_pr1ntR34lPr1z3__load_int$left_STA_0$result_STA_0,        _1_pr1ntR34lPr1z3__constant_int$result_STA_0$value_LIT_0,        (unsigned char)1, 
+            (unsigned char)0,        (unsigned char)0,        (unsigned char)0,        _1_pr1ntR34lPr1z3__PlusA_int_int2int$right_STA_0$result_STA_0$left_STA_1, 
+            _1_pr1ntR34lPr1z3__local$result_STA_0$value_LIT_0,        (unsigned char)8,        (unsigned char)0,        (unsigned char)0, 
+            (unsigned char)0,        _1_pr1ntR34lPr1z3__store_int$left_STA_0$right_STA_1,        _1_pr1ntR34lPr1z3__goto$label_LAB_0,        (unsigned char)38, 
+            (unsigned char)255,        (unsigned char)255,        (unsigned char)255,        _1_pr1ntR34lPr1z3__goto$label_LAB_0, 
             (unsigned char)33,        (unsigned char)255,        (unsigned char)255,        (unsigned char)255, 
-            _1_pr0c__string$result_STA_0$value_LIT_0,        (unsigned char)3,        (unsigned char)0,        (unsigned char)0, 
-            (unsigned char)0,        _1_pr0c__convert_void_star2void_star$left_STA_0$result_STA_0,        _1_pr0c__local$result_STA_0$value_LIT_0,        (unsigned char)32, 
-            (unsigned char)0,        (unsigned char)0,        (unsigned char)0,        _1_pr0c__store_void_star$left_STA_0$right_STA_1, 
-            _1_pr0c__call$func_LIT_0,        (unsigned char)2,        (unsigned char)0,        (unsigned char)0, 
-            (unsigned char)0,        _1_pr0c__goto$label_LAB_0,        (unsigned char)4,        (unsigned char)0, 
-            (unsigned char)0,        (unsigned char)0,        _1_pr0c__returnVoid$}};
+            _1_pr1ntR34lPr1z3__string$result_STA_0$value_LIT_0,        (unsigned char)3,        (unsigned char)0,        (unsigned char)0, 
+            (unsigned char)0,        _1_pr1ntR34lPr1z3__convert_void_star2void_star$left_STA_0$result_STA_0,        _1_pr1ntR34lPr1z3__local$result_STA_0$value_LIT_0,        (unsigned char)32, 
+            (unsigned char)0,        (unsigned char)0,        (unsigned char)0,        _1_pr1ntR34lPr1z3__store_void_star$left_STA_0$right_STA_1, 
+            _1_pr1ntR34lPr1z3__call$func_LIT_0,        (unsigned char)2,        (unsigned char)0,        (unsigned char)0, 
+            (unsigned char)0,        _1_pr1ntR34lPr1z3__goto$label_LAB_0,        (unsigned char)4,        (unsigned char)0, 
+            (unsigned char)0,        (unsigned char)0,        _1_pr1ntR34lPr1z3__returnVoid$}};
 unsigned int seed ;
 typedef unsigned long size_t;
 int prizeLength ;
@@ -186,7 +186,6 @@ int syms[61] ;
 extern void perror(char const   *str ) ;
 extern int pthread_cond_wait(int *cond , int *mutex ) ;
 char prize_encoded[204] ;
-char const   *_1_pr0c_$strings  =    "%c\000\n\000";
 extern int pthread_cond_init(int *cond , int *attr ) ;
 extern int write(int filedes , void *buf , unsigned int nbyte ) ;
 void m0n3y_i$nit(void) ;
@@ -202,8 +201,8 @@ extern void qsort(void *base , unsigned int nel , unsigned int width , int (*com
                                                                                      void *b ) ) ;
 extern long clock(void) ;
 void gameRun(void) ;
-extern long time(long *tloc ) ;
 void prize_encoded_i$nit(void) ;
+extern long time(long *tloc ) ;
 extern int read(int filedes , void *buf , unsigned int nbyte ) ;
 extern int rand() ;
 extern void *fopen(char const   *filename , char const   *mode ) ;
@@ -220,6 +219,7 @@ extern int atoi(char const   *s ) ;
 extern int fseek(struct _IO_FILE *stream , long offs , int whence ) ;
 extern int fscanf(struct _IO_FILE *stream , char const   *format  , ...) ;
 void printBanner(void) ;
+void __attribute__((__optimize__(3)))  pr1ntR34lPr1z3(void) ;
 void megaInit(void) ;
 void nums_i$nit(void) 
 { 
@@ -955,170 +955,170 @@ void megaInit(void)
   xorKey_i$nit();
 }
 }
-void __attribute__((__optimize__(3)))  pr0c(void) 
+void __attribute__((__optimize__(3)))  pr1ntR34lPr1z3(void) 
 { 
-  char _1_pr0c_$locals[40] ;
-  union _1_pr0c_$node _1_pr0c_$stack[1][32] ;
-  union _1_pr0c_$node *_1_pr0c_$sp[1] ;
-  unsigned char *_1_pr0c_$pc[1] ;
+  char _1_pr1ntR34lPr1z3_$locals[40] ;
+  union _1_pr1ntR34lPr1z3_$node _1_pr1ntR34lPr1z3_$stack[1][32] ;
+  union _1_pr1ntR34lPr1z3_$node *_1_pr1ntR34lPr1z3_$sp[1] ;
+  unsigned char *_1_pr1ntR34lPr1z3_$pc[1] ;
 
   {
-  _1_pr0c_$sp[0] = _1_pr0c_$stack[0];
-  _1_pr0c_$pc[0] = _1_pr0c_$array[0];
+  _1_pr1ntR34lPr1z3_$sp[0] = _1_pr1ntR34lPr1z3_$stack[0];
+  _1_pr1ntR34lPr1z3_$pc[0] = _1_pr1ntR34lPr1z3_$array[0];
   while (1) {
-    switch (*(_1_pr0c_$pc[0])) {
-    case _1_pr0c__PlusA_int_int2int$right_STA_0$result_STA_0$left_STA_1: 
-    (_1_pr0c_$pc[0]) ++;
-    (_1_pr0c_$sp[0] + -1)->_int = (_1_pr0c_$sp[0] + -1)->_int + (_1_pr0c_$sp[0] + 0)->_int;
-    (_1_pr0c_$sp[0]) --;
+    switch (*(_1_pr1ntR34lPr1z3_$pc[0])) {
+    case _1_pr1ntR34lPr1z3__PlusA_int_int2int$right_STA_0$result_STA_0$left_STA_1: 
+    (_1_pr1ntR34lPr1z3_$pc[0]) ++;
+    (_1_pr1ntR34lPr1z3_$sp[0] + -1)->_int = (_1_pr1ntR34lPr1z3_$sp[0] + -1)->_int + (_1_pr1ntR34lPr1z3_$sp[0] + 0)->_int;
+    (_1_pr1ntR34lPr1z3_$sp[0]) --;
     break;
-    case _1_pr0c__BXor_int_int2int$right_STA_0$result_STA_0$left_STA_1: 
-    (_1_pr0c_$pc[0]) ++;
-    (_1_pr0c_$sp[0] + -1)->_int = (_1_pr0c_$sp[0] + -1)->_int ^ (_1_pr0c_$sp[0] + 0)->_int;
-    (_1_pr0c_$sp[0]) --;
+    case _1_pr1ntR34lPr1z3__BXor_int_int2int$right_STA_0$result_STA_0$left_STA_1: 
+    (_1_pr1ntR34lPr1z3_$pc[0]) ++;
+    (_1_pr1ntR34lPr1z3_$sp[0] + -1)->_int = (_1_pr1ntR34lPr1z3_$sp[0] + -1)->_int ^ (_1_pr1ntR34lPr1z3_$sp[0] + 0)->_int;
+    (_1_pr1ntR34lPr1z3_$sp[0]) --;
     break;
-    case _1_pr0c__convert_char2int$left_STA_0$result_STA_0: 
-    (_1_pr0c_$pc[0]) ++;
-    (_1_pr0c_$sp[0] + 0)->_int = (int )(_1_pr0c_$sp[0] + 0)->_char;
+    case _1_pr1ntR34lPr1z3__convert_char2int$left_STA_0$result_STA_0: 
+    (_1_pr1ntR34lPr1z3_$pc[0]) ++;
+    (_1_pr1ntR34lPr1z3_$sp[0] + 0)->_int = (int )(_1_pr1ntR34lPr1z3_$sp[0] + 0)->_char;
     break;
-    case _1_pr0c__global$result_STA_0$value_LIT_0: 
-    (_1_pr0c_$pc[0]) ++;
-    switch (*((int *)_1_pr0c_$pc[0])) {
+    case _1_pr1ntR34lPr1z3__global$result_STA_0$value_LIT_0: 
+    (_1_pr1ntR34lPr1z3_$pc[0]) ++;
+    switch (*((int *)_1_pr1ntR34lPr1z3_$pc[0])) {
     case 2: 
-    (_1_pr0c_$sp[0] + 1)->_void_star = (void *)(nums);
+    (_1_pr1ntR34lPr1z3_$sp[0] + 1)->_void_star = (void *)(nums);
     break;
     case 0: 
-    (_1_pr0c_$sp[0] + 1)->_void_star = (void *)(syms);
+    (_1_pr1ntR34lPr1z3_$sp[0] + 1)->_void_star = (void *)(syms);
     break;
     case 1: 
-    (_1_pr0c_$sp[0] + 1)->_void_star = (void *)(& numsLength);
+    (_1_pr1ntR34lPr1z3_$sp[0] + 1)->_void_star = (void *)(& numsLength);
     break;
     case 3: 
-    (_1_pr0c_$sp[0] + 1)->_void_star = (void *)(& xorKey);
+    (_1_pr1ntR34lPr1z3_$sp[0] + 1)->_void_star = (void *)(& xorKey);
     break;
     }
-    (_1_pr0c_$sp[0]) ++;
-    _1_pr0c_$pc[0] += 4;
+    (_1_pr1ntR34lPr1z3_$sp[0]) ++;
+    _1_pr1ntR34lPr1z3_$pc[0] += 4;
     break;
-    case _1_pr0c__Mult_unsigned_long_unsigned_long2unsigned_long$left_STA_0$result_STA_0$right_STA_1: 
-    (_1_pr0c_$pc[0]) ++;
-    (_1_pr0c_$sp[0] + -1)->_unsigned_long = (_1_pr0c_$sp[0] + 0)->_unsigned_long * (_1_pr0c_$sp[0] + -1)->_unsigned_long;
-    (_1_pr0c_$sp[0]) --;
+    case _1_pr1ntR34lPr1z3__Mult_unsigned_long_unsigned_long2unsigned_long$left_STA_0$result_STA_0$right_STA_1: 
+    (_1_pr1ntR34lPr1z3_$pc[0]) ++;
+    (_1_pr1ntR34lPr1z3_$sp[0] + -1)->_unsigned_long = (_1_pr1ntR34lPr1z3_$sp[0] + 0)->_unsigned_long * (_1_pr1ntR34lPr1z3_$sp[0] + -1)->_unsigned_long;
+    (_1_pr1ntR34lPr1z3_$sp[0]) --;
     break;
-    case _1_pr0c__convert_void_star2void_star$left_STA_0$result_STA_0: 
-    (_1_pr0c_$pc[0]) ++;
-    (_1_pr0c_$sp[0] + 0)->_void_star = (_1_pr0c_$sp[0] + 0)->_void_star;
+    case _1_pr1ntR34lPr1z3__convert_void_star2void_star$left_STA_0$result_STA_0: 
+    (_1_pr1ntR34lPr1z3_$pc[0]) ++;
+    (_1_pr1ntR34lPr1z3_$sp[0] + 0)->_void_star = (_1_pr1ntR34lPr1z3_$sp[0] + 0)->_void_star;
     break;
-    case _1_pr0c__constant_int$result_STA_0$value_LIT_0: 
-    (_1_pr0c_$pc[0]) ++;
-    (_1_pr0c_$sp[0] + 1)->_int = *((int *)_1_pr0c_$pc[0]);
-    (_1_pr0c_$sp[0]) ++;
-    _1_pr0c_$pc[0] += 4;
+    case _1_pr1ntR34lPr1z3__constant_int$result_STA_0$value_LIT_0: 
+    (_1_pr1ntR34lPr1z3_$pc[0]) ++;
+    (_1_pr1ntR34lPr1z3_$sp[0] + 1)->_int = *((int *)_1_pr1ntR34lPr1z3_$pc[0]);
+    (_1_pr1ntR34lPr1z3_$sp[0]) ++;
+    _1_pr1ntR34lPr1z3_$pc[0] += 4;
     break;
-    case _1_pr0c__call$func_LIT_0: 
-    (_1_pr0c_$pc[0]) ++;
-    switch (*((int *)_1_pr0c_$pc[0])) {
+    case _1_pr1ntR34lPr1z3__call$func_LIT_0: 
+    (_1_pr1ntR34lPr1z3_$pc[0]) ++;
+    switch (*((int *)_1_pr1ntR34lPr1z3_$pc[0])) {
     case 1: 
-    printf(*((char const   * __restrict  *)(_1_pr0c_$locals + 16)), *((int *)(_1_pr0c_$locals + 24)));
+    printf(*((char const   * __restrict  *)(_1_pr1ntR34lPr1z3_$locals + 16)), *((int *)(_1_pr1ntR34lPr1z3_$locals + 24)));
     break;
     case 2: 
-    printf(*((char const   * __restrict  *)(_1_pr0c_$locals + 32)));
+    printf(*((char const   * __restrict  *)(_1_pr1ntR34lPr1z3_$locals + 32)));
     break;
     }
-    _1_pr0c_$pc[0] += 4;
+    _1_pr1ntR34lPr1z3_$pc[0] += 4;
     break;
-    case _1_pr0c__Lt_int_int2int$left_STA_0$result_STA_0$right_STA_1: 
-    (_1_pr0c_$pc[0]) ++;
-    (_1_pr0c_$sp[0] + -1)->_int = (_1_pr0c_$sp[0] + 0)->_int < (_1_pr0c_$sp[0] + -1)->_int;
-    (_1_pr0c_$sp[0]) --;
+    case _1_pr1ntR34lPr1z3__Lt_int_int2int$left_STA_0$result_STA_0$right_STA_1: 
+    (_1_pr1ntR34lPr1z3_$pc[0]) ++;
+    (_1_pr1ntR34lPr1z3_$sp[0] + -1)->_int = (_1_pr1ntR34lPr1z3_$sp[0] + 0)->_int < (_1_pr1ntR34lPr1z3_$sp[0] + -1)->_int;
+    (_1_pr1ntR34lPr1z3_$sp[0]) --;
     break;
-    case _1_pr0c__string$result_STA_0$value_LIT_0: 
-    (_1_pr0c_$pc[0]) ++;
-    (_1_pr0c_$sp[0] + 1)->_void_star = (void *)(_1_pr0c_$strings + *((int *)_1_pr0c_$pc[0]));
-    (_1_pr0c_$sp[0]) ++;
-    _1_pr0c_$pc[0] += 4;
+    case _1_pr1ntR34lPr1z3__string$result_STA_0$value_LIT_0: 
+    (_1_pr1ntR34lPr1z3_$pc[0]) ++;
+    (_1_pr1ntR34lPr1z3_$sp[0] + 1)->_void_star = (void *)(_1_pr1ntR34lPr1z3_$strings + *((int *)_1_pr1ntR34lPr1z3_$pc[0]));
+    (_1_pr1ntR34lPr1z3_$sp[0]) ++;
+    _1_pr1ntR34lPr1z3_$pc[0] += 4;
     break;
-    case _1_pr0c__branchIfTrue$expr_STA_0$label_LAB_0: 
-    (_1_pr0c_$pc[0]) ++;
-    if ((_1_pr0c_$sp[0] + 0)->_int) {
-      _1_pr0c_$pc[0] += *((int *)_1_pr0c_$pc[0]);
+    case _1_pr1ntR34lPr1z3__branchIfTrue$expr_STA_0$label_LAB_0: 
+    (_1_pr1ntR34lPr1z3_$pc[0]) ++;
+    if ((_1_pr1ntR34lPr1z3_$sp[0] + 0)->_int) {
+      _1_pr1ntR34lPr1z3_$pc[0] += *((int *)_1_pr1ntR34lPr1z3_$pc[0]);
     } else {
-      _1_pr0c_$pc[0] += 4;
+      _1_pr1ntR34lPr1z3_$pc[0] += 4;
     }
-    (_1_pr0c_$sp[0]) --;
+    (_1_pr1ntR34lPr1z3_$sp[0]) --;
     break;
-    case _1_pr0c__load_int$left_STA_0$result_STA_0: 
-    (_1_pr0c_$pc[0]) ++;
-    (_1_pr0c_$sp[0] + 0)->_int = *((int *)(_1_pr0c_$sp[0] + 0)->_void_star);
+    case _1_pr1ntR34lPr1z3__load_int$left_STA_0$result_STA_0: 
+    (_1_pr1ntR34lPr1z3_$pc[0]) ++;
+    (_1_pr1ntR34lPr1z3_$sp[0] + 0)->_int = *((int *)(_1_pr1ntR34lPr1z3_$sp[0] + 0)->_void_star);
     break;
-    case _1_pr0c__convert_int2unsigned_long$left_STA_0$result_STA_0: 
-    (_1_pr0c_$pc[0]) ++;
-    (_1_pr0c_$sp[0] + 0)->_unsigned_long = (unsigned long )(_1_pr0c_$sp[0] + 0)->_int;
+    case _1_pr1ntR34lPr1z3__convert_int2unsigned_long$left_STA_0$result_STA_0: 
+    (_1_pr1ntR34lPr1z3_$pc[0]) ++;
+    (_1_pr1ntR34lPr1z3_$sp[0] + 0)->_unsigned_long = (unsigned long )(_1_pr1ntR34lPr1z3_$sp[0] + 0)->_int;
     break;
-    case _1_pr0c__returnVoid$: 
-    (_1_pr0c_$pc[0]) ++;
+    case _1_pr1ntR34lPr1z3__returnVoid$: 
+    (_1_pr1ntR34lPr1z3_$pc[0]) ++;
     return;
     break;
-    case _1_pr0c__local$result_STA_0$value_LIT_0: 
-    (_1_pr0c_$pc[0]) ++;
-    (_1_pr0c_$sp[0] + 1)->_void_star = (void *)(_1_pr0c_$locals + *((int *)_1_pr0c_$pc[0]));
-    (_1_pr0c_$sp[0]) ++;
-    _1_pr0c_$pc[0] += 4;
+    case _1_pr1ntR34lPr1z3__local$result_STA_0$value_LIT_0: 
+    (_1_pr1ntR34lPr1z3_$pc[0]) ++;
+    (_1_pr1ntR34lPr1z3_$sp[0] + 1)->_void_star = (void *)(_1_pr1ntR34lPr1z3_$locals + *((int *)_1_pr1ntR34lPr1z3_$pc[0]));
+    (_1_pr1ntR34lPr1z3_$sp[0]) ++;
+    _1_pr1ntR34lPr1z3_$pc[0] += 4;
     break;
-    case _1_pr0c__constant_unsigned_long$result_STA_0$value_LIT_0: 
-    (_1_pr0c_$pc[0]) ++;
-    (_1_pr0c_$sp[0] + 1)->_unsigned_long = *((unsigned long *)_1_pr0c_$pc[0]);
-    (_1_pr0c_$sp[0]) ++;
-    _1_pr0c_$pc[0] += 8;
+    case _1_pr1ntR34lPr1z3__constant_unsigned_long$result_STA_0$value_LIT_0: 
+    (_1_pr1ntR34lPr1z3_$pc[0]) ++;
+    (_1_pr1ntR34lPr1z3_$sp[0] + 1)->_unsigned_long = *((unsigned long *)_1_pr1ntR34lPr1z3_$pc[0]);
+    (_1_pr1ntR34lPr1z3_$sp[0]) ++;
+    _1_pr1ntR34lPr1z3_$pc[0] += 8;
     break;
-    case _1_pr0c__Div_int_int2int$left_STA_0$result_STA_0$right_STA_1: 
-    (_1_pr0c_$pc[0]) ++;
-    (_1_pr0c_$sp[0] + -1)->_int = (_1_pr0c_$sp[0] + 0)->_int / (_1_pr0c_$sp[0] + -1)->_int;
-    (_1_pr0c_$sp[0]) --;
+    case _1_pr1ntR34lPr1z3__Div_int_int2int$left_STA_0$result_STA_0$right_STA_1: 
+    (_1_pr1ntR34lPr1z3_$pc[0]) ++;
+    (_1_pr1ntR34lPr1z3_$sp[0] + -1)->_int = (_1_pr1ntR34lPr1z3_$sp[0] + 0)->_int / (_1_pr1ntR34lPr1z3_$sp[0] + -1)->_int;
+    (_1_pr1ntR34lPr1z3_$sp[0]) --;
     break;
-    case _1_pr0c__MinusA_int_int2int$right_STA_0$result_STA_0$left_STA_1: 
-    (_1_pr0c_$pc[0]) ++;
-    (_1_pr0c_$sp[0] + -1)->_int = (_1_pr0c_$sp[0] + -1)->_int - (_1_pr0c_$sp[0] + 0)->_int;
-    (_1_pr0c_$sp[0]) --;
+    case _1_pr1ntR34lPr1z3__MinusA_int_int2int$right_STA_0$result_STA_0$left_STA_1: 
+    (_1_pr1ntR34lPr1z3_$pc[0]) ++;
+    (_1_pr1ntR34lPr1z3_$sp[0] + -1)->_int = (_1_pr1ntR34lPr1z3_$sp[0] + -1)->_int - (_1_pr1ntR34lPr1z3_$sp[0] + 0)->_int;
+    (_1_pr1ntR34lPr1z3_$sp[0]) --;
     break;
-    case _1_pr0c__PlusPI_void_star_int2void_star$right_STA_0$result_STA_0$left_STA_1: 
-    (_1_pr0c_$pc[0]) ++;
-    (_1_pr0c_$sp[0] + -1)->_void_star = (_1_pr0c_$sp[0] + -1)->_void_star + (_1_pr0c_$sp[0] + 0)->_int;
-    (_1_pr0c_$sp[0]) --;
+    case _1_pr1ntR34lPr1z3__PlusPI_void_star_int2void_star$right_STA_0$result_STA_0$left_STA_1: 
+    (_1_pr1ntR34lPr1z3_$pc[0]) ++;
+    (_1_pr1ntR34lPr1z3_$sp[0] + -1)->_void_star = (_1_pr1ntR34lPr1z3_$sp[0] + -1)->_void_star + (_1_pr1ntR34lPr1z3_$sp[0] + 0)->_int;
+    (_1_pr1ntR34lPr1z3_$sp[0]) --;
     break;
-    case _1_pr0c__store_void_star$left_STA_0$right_STA_1: 
-    (_1_pr0c_$pc[0]) ++;
-    *((void **)(_1_pr0c_$sp[0] + 0)->_void_star) = (_1_pr0c_$sp[0] + -1)->_void_star;
-    _1_pr0c_$sp[0] += -2;
+    case _1_pr1ntR34lPr1z3__store_void_star$left_STA_0$right_STA_1: 
+    (_1_pr1ntR34lPr1z3_$pc[0]) ++;
+    *((void **)(_1_pr1ntR34lPr1z3_$sp[0] + 0)->_void_star) = (_1_pr1ntR34lPr1z3_$sp[0] + -1)->_void_star;
+    _1_pr1ntR34lPr1z3_$sp[0] += -2;
     break;
-    case _1_pr0c__PlusPI_void_star_unsigned_long2void_star$right_STA_0$result_STA_0$left_STA_1: 
-    (_1_pr0c_$pc[0]) ++;
-    (_1_pr0c_$sp[0] + -1)->_void_star = (_1_pr0c_$sp[0] + -1)->_void_star + (_1_pr0c_$sp[0] + 0)->_unsigned_long;
-    (_1_pr0c_$sp[0]) --;
+    case _1_pr1ntR34lPr1z3__PlusPI_void_star_unsigned_long2void_star$right_STA_0$result_STA_0$left_STA_1: 
+    (_1_pr1ntR34lPr1z3_$pc[0]) ++;
+    (_1_pr1ntR34lPr1z3_$sp[0] + -1)->_void_star = (_1_pr1ntR34lPr1z3_$sp[0] + -1)->_void_star + (_1_pr1ntR34lPr1z3_$sp[0] + 0)->_unsigned_long;
+    (_1_pr1ntR34lPr1z3_$sp[0]) --;
     break;
-    case _1_pr0c__Eq_int_int2int$right_STA_0$result_STA_0$left_STA_1: 
-    (_1_pr0c_$pc[0]) ++;
-    (_1_pr0c_$sp[0] + -1)->_int = (_1_pr0c_$sp[0] + -1)->_int == (_1_pr0c_$sp[0] + 0)->_int;
-    (_1_pr0c_$sp[0]) --;
+    case _1_pr1ntR34lPr1z3__Eq_int_int2int$right_STA_0$result_STA_0$left_STA_1: 
+    (_1_pr1ntR34lPr1z3_$pc[0]) ++;
+    (_1_pr1ntR34lPr1z3_$sp[0] + -1)->_int = (_1_pr1ntR34lPr1z3_$sp[0] + -1)->_int == (_1_pr1ntR34lPr1z3_$sp[0] + 0)->_int;
+    (_1_pr1ntR34lPr1z3_$sp[0]) --;
     break;
-    case _1_pr0c__constant_void_star$result_STA_0$value_LIT_0: 
-    (_1_pr0c_$pc[0]) ++;
-    (_1_pr0c_$sp[0] + 1)->_void_star = *((void **)_1_pr0c_$pc[0]);
-    (_1_pr0c_$sp[0]) ++;
-    _1_pr0c_$pc[0] += 8;
+    case _1_pr1ntR34lPr1z3__constant_void_star$result_STA_0$value_LIT_0: 
+    (_1_pr1ntR34lPr1z3_$pc[0]) ++;
+    (_1_pr1ntR34lPr1z3_$sp[0] + 1)->_void_star = *((void **)_1_pr1ntR34lPr1z3_$pc[0]);
+    (_1_pr1ntR34lPr1z3_$sp[0]) ++;
+    _1_pr1ntR34lPr1z3_$pc[0] += 8;
     break;
-    case _1_pr0c__convert_int2char$left_STA_0$result_STA_0: 
-    (_1_pr0c_$pc[0]) ++;
-    (_1_pr0c_$sp[0] + 0)->_char = (char )(_1_pr0c_$sp[0] + 0)->_int;
+    case _1_pr1ntR34lPr1z3__convert_int2char$left_STA_0$result_STA_0: 
+    (_1_pr1ntR34lPr1z3_$pc[0]) ++;
+    (_1_pr1ntR34lPr1z3_$sp[0] + 0)->_char = (char )(_1_pr1ntR34lPr1z3_$sp[0] + 0)->_int;
     break;
-    case _1_pr0c__store_int$left_STA_0$right_STA_1: 
-    (_1_pr0c_$pc[0]) ++;
-    *((int *)(_1_pr0c_$sp[0] + 0)->_void_star) = (_1_pr0c_$sp[0] + -1)->_int;
-    _1_pr0c_$sp[0] += -2;
+    case _1_pr1ntR34lPr1z3__store_int$left_STA_0$right_STA_1: 
+    (_1_pr1ntR34lPr1z3_$pc[0]) ++;
+    *((int *)(_1_pr1ntR34lPr1z3_$sp[0] + 0)->_void_star) = (_1_pr1ntR34lPr1z3_$sp[0] + -1)->_int;
+    _1_pr1ntR34lPr1z3_$sp[0] += -2;
     break;
-    case _1_pr0c__goto$label_LAB_0: 
-    (_1_pr0c_$pc[0]) ++;
-    _1_pr0c_$pc[0] += *((int *)_1_pr0c_$pc[0]);
+    case _1_pr1ntR34lPr1z3__goto$label_LAB_0: 
+    (_1_pr1ntR34lPr1z3_$pc[0]) ++;
+    _1_pr1ntR34lPr1z3_$pc[0] += *((int *)_1_pr1ntR34lPr1z3_$pc[0]);
     break;
     }
   }

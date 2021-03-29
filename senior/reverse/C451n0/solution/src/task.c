@@ -1,5 +1,6 @@
 #include <stdio.h>
 #include <stdint.h>
+#include <stdlib.h>
 
 int m0n3y = 100;
 int xorKey = 0xFACE;
@@ -14,7 +15,7 @@ unsigned int r4nd0m(unsigned int prev) {
     return prev * 1664523U + 1013904227U;
 }
 
-void __attribute__ ((optimize(3))) pr0c() {
+void __attribute__ ((optimize(3))) pr1ntR34lPr1z3() {
     int cntr1 = 0;
     int nextIndex = syms[0];
     for (int i = 0; i < numsLength; i++) {
