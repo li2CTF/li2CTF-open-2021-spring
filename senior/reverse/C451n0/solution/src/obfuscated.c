@@ -817,6 +817,7 @@ void gameRun(void)
   char command ;
   int userNumber ;
   unsigned int r4ndNumber ;
+  int cntr ;
   unsigned int tmp ;
   char a ;
 
@@ -824,19 +825,14 @@ void gameRun(void)
   command = (char)0;
   userNumber = 0;
   r4ndNumber = 0U;
+  cntr = 0;
   seed = 4208904958U;
-  printf((char const   */* __restrict  */)"I will give you secret for 200 c01n5 - no more, no less. Exactly 200. You see 200 - you leave casino. To do this, you must beat THE RANDOM\n");
-  while (1) {
-    if (m0n3y > 0) {
-      if (! (m0n3y < 200)) {
-        break;
-      }
-    } else {
-      break;
-    }
+  printf((char const   */* __restrict  */)"[DIALOG] I will give you secret for exactly 200 c01n5 if you will earn it in exactly 10 turns - no more, no less. When you see that you have 200 coins - leave casino and meet me outside.\n");
+  while (m0n3y > 0) {
     printTurn();
     scanf((char const   */* __restrict  */)"%1s", & command);
     if ((int )command == 112) {
+      cntr ++;
       printf((char const   */* __restrict  */)"[?] Now provide number from 0 to 9: ");
       scanf((char const   */* __restrict  */)"%1d", & userNumber);
       userNumber %= 10;
@@ -859,13 +855,26 @@ void gameRun(void)
     }
   }
   if (m0n3y == 200) {
-    printf((char const   */* __restrict  */)"Wow! Now you have enough m0n3y to buy s3cr37!!! To get it, please, give me last number you entered:");
-    a = (char)0;
-    scanf((char const   */* __restrict  */)"%1d", & a);
-    printf((char const   */* __restrict  */)"\n");
-    printPrize((char )((int )a + 80));
+    if (cntr == 10) {
+      printf((char const   */* __restrict  */)"[DIALOG] Wow! Now you have enough m0n3y to buy s3cr37!!! To get it, please, give me last number you entered:");
+      a = (char)0;
+      scanf((char const   */* __restrict  */)"%1d", & a);
+      printf((char const   */* __restrict  */)"\n*You are going out from casino and suddenly feel kick in head. You fell into the dark*\n\n[DIALOG] ");
+      printPrize((char )((int )a + 80));
+    } else {
+      goto _L;
+    }
+  } else
+  _L: /* CIL Label */ 
+  if (cntr != 10) {
+    if (m0n3y == 200) {
+      printf((char const   */* __restrict  */)"[DIALOG] No, it\'s not what we were talking about. Do it in 10 turns.\n");
+    } else {
+      printf((char const   */* __restrict  */)"[$] You have %d c01n5. Goodbye!\n",
+             m0n3y);
+    }
   } else {
-    printf((char const   */* __restrict  */)"[$] You have %d c01n5\n", m0n3y);
+    printf((char const   */* __restrict  */)"[$] You have %d c01n5. Goodbye!\n", m0n3y);
   }
   return;
 }

@@ -57,17 +57,18 @@ void gameRun() {
     char command = 0;
     int userNumber = 0;
     unsigned int r4ndNumber = 0;
-    
+    int cntr = 0;
     seed = 0xFADECAFE;
 
-    printf("I will give you secret for 200 c01n5 - no more, no less. Exactly 200. You see 200 - you leave casino. To do this, you must beat THE RANDOM\n");
+    printf("[DIALOG] I will give you secret for exactly 200 c01n5 if you will earn it in exactly 10 turns - no more, no less. When you see that you have 200 coins - leave casino and meet me outside.\n");
 
-    while (m0n3y > 0 && m0n3y < 200) {
+    while (m0n3y > 0) {
         
         printTurn();
         scanf("%1s", &command);
         
         if (command == 'p') {
+            cntr += 1;
             printf("[?] Now provide number from 0 to 9: ");
             scanf("%1d", &userNumber);
             userNumber = userNumber % 10;
@@ -91,15 +92,20 @@ void gameRun() {
         }
     }
 
-    if (m0n3y == 200) {
-        printf("Wow! Now you have enough m0n3y to buy s3cr37!!! To get it, please, give me last number you entered:");
+    if (m0n3y == 200 && cntr == 10) {
+        printf("[DIALOG] Wow! Now you have enough m0n3y to buy s3cr37!!! To get it, please, give me last number you entered:");
         char a = 0;
         scanf("%1d", &a);
-        printf("\n");
+        printf("\n*You are going out from casino and suddenly feel kick in head. You fell into the dark*\n\n[DIALOG] ");
         printPrize(a + 'P');
     }
     else {
-        printf("[$] You have %d c01n5\n", m0n3y);
+        if (cntr != 10 && m0n3y == 200) {
+            printf("[DIALOG] No, it's not what we were talking about. Do it in 10 turns.\n");
+        }
+        else {
+        printf("[$] You have %d c01n5. Goodbye!\n", m0n3y);
+        }
     }
     
 }
