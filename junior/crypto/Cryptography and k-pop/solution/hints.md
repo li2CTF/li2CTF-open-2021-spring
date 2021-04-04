@@ -1,0 +1,6 @@
+# Hints
+## Magic bytes
+
+---
+
+## Romanization
