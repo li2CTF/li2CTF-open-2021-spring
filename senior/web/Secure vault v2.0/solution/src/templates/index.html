@@ -1,0 +1,21 @@
+{% extends "base.html" %}
+
+{% block content %}
+<div class="p-3 mb-2 bg-secondary text-white column justify-content-center", style="width:30%">
+    <form action="" method="post">
+        <p>
+            {{ form.username.label(class="form-check-label", style="align:center") }}
+            <br>
+            {{ form.username(type="text") }}
+        </p>
+        <p>
+            {{ form.password.label(class="form-check-label", style="align:center") }}
+            <br>
+            {{ form.password(type="password") }}
+        </p>
+        <p>
+            {{ form.submit(type="submit", class="btn btn-danger") }}
+        </p>
+    </form>
+</div>
+{% endblock %}
