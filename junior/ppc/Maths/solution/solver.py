@@ -4,7 +4,7 @@ CORRECT_LINE = b'Correct\n'
 READY_LINE = b"Ready?\n"
 
 sock = socket.socket()
-sock.connect(("0.0.0.0", 23001))
+sock.connect(("0.0.0.0", 25005))
 
 
 while True:

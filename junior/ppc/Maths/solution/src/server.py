@@ -1,7 +1,7 @@
 import asyncio
 import random
 
-HOST, PORT = '0.0.0.0', 23001
+HOST, PORT = '0.0.0.0', 25005
 FLAG = "flag{7CP_m47h_w17h_h3lp_0f_py7h0n}"
 TASKS_COUNT = 50
 
