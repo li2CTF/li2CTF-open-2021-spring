@@ -17,8 +17,8 @@ class MathsServer(asyncio.Protocol):
         self.peername = transport.get_extra_info('peername')
         print(f"Client \033[032mconnected\033[0m: {self.peername}")
         self.transport = transport
-        self.transport.write(b"I send you two numbers - you send me multiplication of these numbers. 10 seconds per task. Ready?\n")
-        self.loop.call_later(10, self.timeout)
+        self.transport.write(b"I send you two numbers - you send me multiplication of these numbers. 1.5 minute for all tasks. Ready?\n")
+        self.loop.call_later(90, self.timeout)
         self.make_task()
 
     def data_received(self, data):
@@ -43,7 +43,6 @@ class MathsServer(asyncio.Protocol):
             return
         a, b = random.randint(0, 100000), random.randint(0, 100000)
         self.ans = a * b
-        self.loop.call_later(10, self.timeout)
         self.transport.write(f"{a}, {b}\n".encode())
         
     def check_answer(self, n):
