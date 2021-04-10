@@ -2,6 +2,7 @@ import random
 from flask import Flask, render_template
 
 app = Flask(__name__)
+FLAG = "flag{d1d_y0u_3nj0y_0ur_l0g5?_1_h0p3_y0u_d1d}"
 
 @app.route('/flag')
 def flag():
@@ -9,7 +10,7 @@ def flag():
 
 @app.route('/admin')
 def admin():
-    return """<h4>flag{d1d_y0u_3nj0y_0ur_l0g5?_1_h0p3_y0u_d1d}<h4>"""
+    return f"""<h4>{FLAG}<h4>"""
 
 @app.route('/<word>')
 def random_pic(word):
@@ -20,5 +21,4 @@ def random_pic(word):
     return render_template("li2_for.html", width=width, height=height, word=word)
 
 if __name__ == "__main__":
-    # app.debug = True
-    app.run()
+    app.run(host='0.0.0.0', port=25006)
