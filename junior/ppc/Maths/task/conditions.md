@@ -1,5 +1,5 @@
 # Maths
-How good are you in maths? Let's check it. I give you 2 numbers - you give me multiplication of them. After some tasks I will send you flag.
+How good are you in maths? Let's check it. I give you 2 numbers - you give me multiplication of them. After some amount of tasks I will send you flag.
 
 In this task you will need `PuTTY` (windows) or `netcat` (linux) for socket-conversation. You may also use `socket` python library.
 
