@@ -1,5 +1,12 @@
 FROM disconnect3d/nsjail:3.0
 
+ENV http_proxy "http://192.168.2.1:3128"
+ENV https_proxy "http://192.168.2.1:3128"
+
+RUN echo 'Acquire::http::proxy "http://192.168.2.1:3128";' >> /etc/apt/apt.conf
+RUN echo 'Acquire::https::proxy "http://192.168.2.1:3128";' >> /etc/apt/apt.conf
+
+
 RUN apt-get update
 RUN apt-get install -y python3 python3-pip
 # cal
