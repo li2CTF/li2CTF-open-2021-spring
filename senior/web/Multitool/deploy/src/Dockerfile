@@ -30,11 +30,21 @@ RUN apt-get -y update && apt-get install -y \
     && rm -rf /var/lib/apt/lists/*
 
 WORKDIR /
-COPY ./nsjail_src /nsjail_src
-RUN cd /nsjail_src && make && mv /nsjail_src/nsjail /bin && rm -rf -- /nsjail_src
+
+RUN git clone https://github.com/google/nsjail.git
+
+WORKDIR /nsjail
+
+RUN git checkout tags/3.0
+
+COPY nsjail/nsjail_execvp.patch .
+
+RUN patch < nsjail_execvp.patch
+
+RUN cd /nsjail && make && mv ./nsjail /bin && rm -rf -- /nsjail
 
 ADD nsjail/nsjail.sh /nsjail.sh
-# ADD nsjail/nsjail.cfg /nsjail.cfg
+
 RUN chmod 555 /nsjail.sh
 
 WORKDIR /chroot/
@@ -56,21 +66,17 @@ RUN mkdir -p ./bin/ && \
        /bin/cat \
        /bin/pwd \
        /bin/date \
-       /bin/echo \
        ./bin/ && \
     ln -s /bin/sh ./bin/bash && \
     chmod 111 ./bin/*
 
-#RUN mkdir -p ./usr/bin/ && \
-#    cp /usr/bin/id \
-RUN cp /usr/bin/id \
+RUN mkdir -p ./usr/bin/ && \
+    cp /usr/bin/id \
        /usr/bin/whoami \
        /usr/bin/uptime \
        /usr/bin/cal \
-       /usr/bin/env \
-       ./bin/
-#       ./bin/ && \
-#    chmod 111 ./usr/bin/*
+       ./usr/bin/ && \
+    chmod 111 ./usr/bin/*
 
 RUN mkdir ./etc/ && \
     cp /etc/passwd ./etc/ && \

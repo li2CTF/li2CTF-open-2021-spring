@@ -1,0 +1,13 @@
+diff --git a/subproc.cc b/subproc.cc
+index dd39fa1..4cef30c 100644
+--- a/subproc.cc
++++ b/subproc.cc
+@@ -199,7 +199,7 @@ static void subprocNewProc(
+ 		return;
+ #endif /* defined(__NR_execveat) */
+ 	} else {
+-		execv(nsjconf->exec_file.c_str(), (char* const*)argv.data());
++		execvp(nsjconf->exec_file.c_str(), (char* const*)argv.data());
+ 	}
+ 
+ 	PLOG_E("execve('%s') failed", nsjconf->exec_file.c_str());
