@@ -5,14 +5,9 @@ services:
     build: src
     restart: always
     ports:
-      - 35004:25004
+      - 21004:25004
     pids_limit: 512
     mem_limit: 128M
     privileged: true
     volumes:
       - ./src/nsjail/logs/:/var/log/nsjail/
-
-networks:
-  default:
-    external:
-      name: my-docker-net
