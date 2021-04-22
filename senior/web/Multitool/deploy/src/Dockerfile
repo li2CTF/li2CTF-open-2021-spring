@@ -7,20 +7,34 @@ RUN apt-get install -y bsdmainutils
 
 ENV PYTHONUNBUFFERED 1
 
-WORKDIR /chroot/
-COPY ./app/ ./app/
-WORKDIR ./app/
+RUN apt-get -y update && apt-get install -y \
+    autoconf \
+    bison \
+    flex \
+    gcc \
+    g++ \
+    git \
+    libprotobuf-dev \
+    libnl-route-3-dev \
+    libtool \
+    make \
+    pkg-config \
+    protobuf-compiler \
+    && rm -rf /var/lib/apt/lists/*
 
-RUN pip3 install -r requirements.txt
+WORKDIR /
+COPY ./nsjail_src /nsjail_src
+RUN cd /nsjail_src && make && mv /nsjail_src/nsjail /bin && rm -rf -- /nsjail_src
+
+ADD nsjail/nsjail.sh /nsjail.sh
+# ADD nsjail/nsjail.cfg /nsjail.cfg
+RUN chmod 555 /nsjail.sh
 
 WORKDIR /chroot/
 
 RUN mkdir -p ./usr/lib/ && \
     cp -R /lib* . && \
     cp -R /usr/lib* ./usr/
-#    cp -R /usr/lib* ./usr/ && \
-#    mkdir -p ./usr/local/lib && \
-#    cp -R /usr/local/lib/python* ./usr/local/lib
 
 RUN mkdir ./dev && \
     mknod ./dev/null c 1 3 && \
@@ -44,7 +58,6 @@ RUN mkdir -p ./bin/ && \
 #    cp /usr/bin/id \
 RUN cp /usr/bin/id \
        /usr/bin/whoami \
-#       /usr/bin/python3 \
        /usr/bin/uptime \
        /usr/bin/cal \
        /usr/bin/env \
@@ -60,22 +73,12 @@ RUN mkdir ./tmp/ && \
     chmod 777 ./tmp/ && \
     chmod +t ./tmp/
 
-WORKDIR /
-ADD nsjail/nsjail.sh /nsjail.sh
-RUN chmod 555 /nsjail.sh
-
-WORKDIR /chroot/app/
+COPY ./app/ ./app/
+WORKDIR ./app/
+RUN pip3 install -r requirements.txt
 
 RUN chmod 444 ./flag.txt
 
 RUN touch ./rm_me.txt
 
-#ENTRYPOINT ["/nsjail.sh" ]
-#CMD [ "which", "cat"]
-#WORKDIR /app/
-#CMD [ "/usr/bin/python3", "server.py" ]
-
-#ENV FLASK_APP=server.py
-#ENV FLASK_ENV=development
-#CMD [ "gunicorn", "-b", "0.0.0.0:5656", "-w", "4", "wsgi:app" ]
 CMD [ "python3", "server.py"]

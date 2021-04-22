@@ -27,7 +27,7 @@ def main():
             cmd = form.uptime.raw_data[0].lower()
         print(f"[*] Executing: {cmd}")
         cmd = cmd.split(" ")
-        result = subprocess.run(["/nsjail.sh"] + ["/bin/" + cmd[0]] + cmd[1:], stdout=subprocess.PIPE)
+        result = subprocess.run(["/nsjail.sh"] + cmd, stdout=subprocess.PIPE)
         print(f"[*] Result: {result.stdout[:96 if len(result.stdout) >= 97 else None]}...")
         return render_template('output.html', output=result.stdout.decode("ascii"))
     return render_template('index.html', form=form)
