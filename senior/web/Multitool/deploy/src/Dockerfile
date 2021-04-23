@@ -14,20 +14,44 @@ RUN apt-get install -y bsdmainutils
 
 ENV PYTHONUNBUFFERED 1
 
-WORKDIR /chroot/
-COPY ./app/ ./app/
-WORKDIR ./app/
+RUN apt-get -y update && apt-get install -y \
+    autoconf \
+    bison \
+    flex \
+    gcc \
+    g++ \
+    git \
+    libprotobuf-dev \
+    libnl-route-3-dev \
+    libtool \
+    make \
+    pkg-config \
+    protobuf-compiler \
+    && rm -rf /var/lib/apt/lists/*
 
-RUN pip3 install -r requirements.txt
+WORKDIR /
+
+RUN git clone https://github.com/google/nsjail.git
+
+WORKDIR /nsjail
+
+RUN git checkout tags/3.0
+
+COPY nsjail/nsjail_execvp.patch .
+
+RUN patch < nsjail_execvp.patch
+
+RUN cd /nsjail && make && mv ./nsjail /bin && rm -rf -- /nsjail
+
+ADD nsjail/nsjail.sh /nsjail.sh
+
+RUN chmod 555 /nsjail.sh
 
 WORKDIR /chroot/
 
 RUN mkdir -p ./usr/lib/ && \
     cp -R /lib* . && \
     cp -R /usr/lib* ./usr/
-#    cp -R /usr/lib* ./usr/ && \
-#    mkdir -p ./usr/local/lib && \
-#    cp -R /usr/local/lib/python* ./usr/local/lib
 
 RUN mkdir ./dev && \
     mknod ./dev/null c 1 3 && \
@@ -42,22 +66,17 @@ RUN mkdir -p ./bin/ && \
        /bin/cat \
        /bin/pwd \
        /bin/date \
-       /bin/echo \
        ./bin/ && \
     ln -s /bin/sh ./bin/bash && \
     chmod 111 ./bin/*
 
-#RUN mkdir -p ./usr/bin/ && \
-#    cp /usr/bin/id \
-RUN cp /usr/bin/id \
+RUN mkdir -p ./usr/bin/ && \
+    cp /usr/bin/id \
        /usr/bin/whoami \
-#       /usr/bin/python3 \
        /usr/bin/uptime \
        /usr/bin/cal \
-       /usr/bin/env \
-       ./bin/
-#       ./bin/ && \
-#    chmod 111 ./usr/bin/*
+       ./usr/bin/ && \
+    chmod 111 ./usr/bin/*
 
 RUN mkdir ./etc/ && \
     cp /etc/passwd ./etc/ && \
@@ -67,22 +86,12 @@ RUN mkdir ./tmp/ && \
     chmod 777 ./tmp/ && \
     chmod +t ./tmp/
 
-WORKDIR /
-ADD nsjail/nsjail.sh /nsjail.sh
-RUN chmod 555 /nsjail.sh
-
-WORKDIR /chroot/app/
+COPY ./app/ ./app/
+WORKDIR ./app/
+RUN pip3 install -r requirements.txt
 
 RUN chmod 444 ./flag.txt
 
 RUN touch ./rm_me.txt
 
-#ENTRYPOINT ["/nsjail.sh" ]
-#CMD [ "which", "cat"]
-#WORKDIR /app/
-#CMD [ "/usr/bin/python3", "server.py" ]
-
-#ENV FLASK_APP=server.py
-#ENV FLASK_ENV=development
-#CMD [ "gunicorn", "-b", "0.0.0.0:5656", "-w", "4", "wsgi:app" ]
 CMD [ "python3", "server.py"]
