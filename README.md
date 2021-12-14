@@ -1,3 +1,3 @@
-# 🚩 li2CTF-2021-spring
+# 🚩 li2CTF-Open-2021-Spring
 
-2021' spring season li2CTF contest repository
+li2CTF Open 2021 Spring repository
